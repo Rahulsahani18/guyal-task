@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add shadows for the card effect */
+  transition: 0.3s; /* Smooth transition on hover */
+  border-radius: 5px; /* Rounded corners */
+  width: 80%;
+  margin: 5% auto;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* img {
+  border-radius: 5px 5px 0 0; 
+} */
+
+.InptBox1, .InptBox2 {
+  width: 100%;
+  height: 35px;
+  margin-top: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 15px;
+}
+
+.InptBox1:hover, .InptBox2:hover {
+  border: 1px solid rgb(41, 172, 248);
+}
+
+.btn1 {
+  outline: none;
+  margin: 10px;
+  height: 40px;
+  width: 70px;
+  border: none;
+  border-radius: 3px;
+}
+
+.btnlogin {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 106, 255);
   color: white;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media queries for mobile responsiveness */
+@media (min-width: 600px) {
+  .card {
+    width: 60%;
+    margin: 5% auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btnlogin {
+    width: 13rem;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 50%;
+    margin: 5% auto;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+
+  .btnlogin {
+    width: 13rem;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 38%;
+    margin: 3% auto;
   }
 }

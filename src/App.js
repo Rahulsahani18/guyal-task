@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="card">
+        <div className="container">
+          <h3><b>Back to your digital life</b></h3>
+          <span>Choose one of the option to go</span>
+          <br/>
+          <input className="InptBox1" type="text" placeholder="Email"/>
+          <input className="InptBox2" type="text" placeholder="Password"/>
+          <hr style={{marginTop:"20px", width:"15rem"}} />
+          <span>Or continue with</span>
+          <br/>
+          <button className="btn1"><i className="fa-brands fa-google" style={{fontSize:"20px"}}></i></button>
+          <button className="btn1"><i className="fa-brands fa-meta" style={{fontSize:"20px"}}></i></button>
+          <button className="btn1"><i className="fa-brands fa-apple" style={{fontSize:"25px"}}></i></button>
+          <button className="btnlogin">Login</button>
+        </div>
+      </div>
+    </>
   );
 }
 
